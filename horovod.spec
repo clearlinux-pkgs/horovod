@@ -4,7 +4,7 @@
 #
 Name     : horovod
 Version  : 0.15.2
-Release  : 2
+Release  : 3
 URL      : https://github.com/uber/horovod/archive/v0.15.2.tar.gz
 Source0  : https://github.com/uber/horovod/archive/v0.15.2.tar.gz
 Summary  : No detailed summary available
@@ -14,6 +14,7 @@ Requires: horovod-license = %{version}-%{release}
 Requires: horovod-python = %{version}-%{release}
 Requires: horovod-python3 = %{version}-%{release}
 Requires: cffi
+Requires: openmpi
 BuildRequires : buildreq-distutils3
 BuildRequires : cffi
 BuildRequires : openmpi
@@ -58,10 +59,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1543513831
+export SOURCE_DATE_EPOCH=1545258790
+export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %install
+export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/horovod
 cp LICENSE %{buildroot}/usr/share/package-licenses/horovod/LICENSE
