@@ -4,7 +4,7 @@
 #
 Name     : horovod
 Version  : 0.15.2
-Release  : 3
+Release  : 4
 URL      : https://github.com/uber/horovod/archive/v0.15.2.tar.gz
 Source0  : https://github.com/uber/horovod/archive/v0.15.2.tar.gz
 Summary  : No detailed summary available
