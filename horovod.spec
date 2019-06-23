@@ -4,7 +4,7 @@
 #
 Name     : horovod
 Version  : 0.15.2
-Release  : 6
+Release  : 7
 URL      : https://github.com/horovod/horovod/archive/v0.15.2.tar.gz
 Source0  : https://github.com/horovod/horovod/archive/v0.15.2.tar.gz
 Summary  : No detailed summary available
@@ -19,6 +19,7 @@ BuildRequires : buildreq-distutils3
 BuildRequires : cffi
 BuildRequires : openmpi
 BuildRequires : openmpi-dev
+BuildRequires : pytorch
 BuildRequires : tensorflow
 
 %description
@@ -59,7 +60,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1545258790
+export SOURCE_DATE_EPOCH=1561269290
+export GCC_IGNORE_WERROR=1
+export CFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$CFLAGS -fno-lto "
+export FFLAGS="$CFLAGS -fno-lto "
+export CXXFLAGS="$CXXFLAGS -fno-lto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 

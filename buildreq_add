@@ -3,3 +3,4 @@
 openmpi
 openmpi-dev
 tensorflow
+pytorch
