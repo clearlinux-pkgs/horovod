@@ -1,5 +1,8 @@
+ld-linux-x86-64.so.2
 libc.so.6
 libgcc_s.so.1
-libmpi.so.20
+libm.so.6
+libmpi.so.40
 libpthread.so.0
 libstdc++.so.6
+libtensorflow_framework.so.1
