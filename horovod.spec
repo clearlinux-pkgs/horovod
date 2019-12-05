@@ -4,7 +4,7 @@
 #
 Name     : horovod
 Version  : 0.18.2
-Release  : 12
+Release  : 13
 URL      : https://files.pythonhosted.org/packages/2b/ae/c86526c637e427c4bac1b6eff890ae39493ddde7ff48b7bb497d0ceaef1b/horovod-0.18.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/2b/ae/c86526c637e427c4bac1b6eff890ae39493ddde7ff48b7bb497d0ceaef1b/horovod-0.18.2.tar.gz
 Summary  : Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet.
