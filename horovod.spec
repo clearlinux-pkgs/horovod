@@ -4,7 +4,7 @@
 #
 Name     : horovod
 Version  : 0.19.0
-Release  : 17
+Release  : 18
 URL      : https://files.pythonhosted.org/packages/e8/1b/51c36afc6dab9afad1caed2a11366d1e238e42f3c51177d06779356f8f1a/horovod-0.19.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e8/1b/51c36afc6dab9afad1caed2a11366d1e238e42f3c51177d06779356f8f1a/horovod-0.19.0.tar.gz
 Summary  : Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet.
@@ -73,6 +73,7 @@ python components for the horovod package.
 Summary: python3 components for the horovod package.
 Group: Default
 Requires: python3-core
+Provides: pypi(horovod)
 
 %description python3
 python3 components for the horovod package.
@@ -87,7 +88,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1579030475
+export SOURCE_DATE_EPOCH=1582936204
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
