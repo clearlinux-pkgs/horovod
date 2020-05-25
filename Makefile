@@ -1,5 +1,5 @@
 PKG_NAME := horovod
-URL = https://files.pythonhosted.org/packages/af/7a/d1ecb3b8911ece7b3b7e7c23cb074c7bbfee73b3149a668cfeee59480fa9/horovod-0.19.2.tar.gz
+URL = https://files.pythonhosted.org/packages/1a/a4/10f01433d02f2bfcd8c470d3f3da0e0fe9036013fad87df56f549c85ef20/horovod-0.19.3.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
