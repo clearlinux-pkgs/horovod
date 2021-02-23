@@ -4,7 +4,7 @@
 #
 Name     : horovod
 Version  : 0.21.3
-Release  : 30
+Release  : 31
 URL      : https://files.pythonhosted.org/packages/12/99/8e6c86ef89aadd8f2b49d0fcec96d215589faf7d259a6a7927e219aa3450/horovod-0.21.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/12/99/8e6c86ef89aadd8f2b49d0fcec96d215589faf7d259a6a7927e219aa3450/horovod-0.21.3.tar.gz
 Summary  : Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet.
@@ -18,12 +18,10 @@ Requires: Keras
 Requires: PyYAML
 Requires: cffi
 Requires: cloudpickle
-Requires: dataclasses
 Requires: h5py
 Requires: mxnet
 Requires: numpy
 Requires: openmpi
-Requires: petastorm
 Requires: psutil
 Requires: tensorflow
 BuildRequires : Keras
@@ -32,13 +30,11 @@ BuildRequires : buildreq-cmake
 BuildRequires : buildreq-distutils3
 BuildRequires : cffi
 BuildRequires : cloudpickle
-BuildRequires : dataclasses
 BuildRequires : h5py
 BuildRequires : mxnet
 BuildRequires : numpy
 BuildRequires : openmpi
 BuildRequires : openmpi-dev
-BuildRequires : petastorm
 BuildRequires : psutil
 BuildRequires : python3-dev
 BuildRequires : pytorch
@@ -96,7 +92,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1614038380
+export SOURCE_DATE_EPOCH=1614042425
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
